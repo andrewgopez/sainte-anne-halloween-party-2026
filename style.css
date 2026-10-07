@@ -65,6 +65,106 @@ main a:hover {
     transform: scale(1.05);
 }
 
+/* Hero Section */
+
+.hero-section {
+    margin-bottom: 60px;
+    padding: 50px 30px;
+    color: white;
+    background: linear-gradient(135deg, #064b70, #168ac0, #36b7d9);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 90, 130, 0.25);
+}
+
+.hero-section .section-label {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.hero-section h2 {
+    margin: 0 0 15px;
+    font-size: 2.5rem;
+}
+
+.hero-intro {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Party Information */
+
+.party-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 30px auto 50px;
+}
+
+.info-card {
+    position: relative;
+    padding: 30px 15px;
+    overflow: hidden;
+    background: linear-gradient(145deg, #f5fcff, #c8edff);
+    border: 1px solid #8bd4f2;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0, 100, 150, 0.12);
+    transition: 0.3s ease;
+}
+
+.info-card::before {
+    content: "🌊";
+    position: absolute;
+    right: -12px;
+    bottom: -25px;
+    font-size: 5rem;
+    opacity: 0.08;
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 100, 150, 0.22);
+}
+
+.info-card:hover::before {
+    transform: rotate(10deg) scale(1.15);
+    opacity: 0.15;
+}
+
+.info-icon {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 3rem;
+    transition: 0.3s ease;
+}
+
+.info-card:hover .info-icon {
+    transform: translateY(-5px) scale(1.15) rotate(5deg);
+}
+
+.info-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.info-card p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.info-card small {
+    display: block;
+    margin-top: 5px;
+    color: #555;
+}
+
+.info-card a {
+    color: inherit;
+}
+
 /* Countdown */
 #countdown {
     display: flex;
@@ -87,6 +187,14 @@ main a:hover {
     font-size: 1rem;
     margin-left: 5px;
     letter-spacing: 1px;
+}
+
+/* Hero Outro */
+
+.hero-outro {
+    margin: 40px auto;
+    font-size: 1.3rem;
+    line-height: 1.6;
 }
 
 /* Location Page */
@@ -232,6 +340,14 @@ main a:hover {
     grid-column: 1 / -1;
 }
 
+.party-area.featured .area-type {
+    font-size: 0.85rem;
+}
+
+.featured-description {
+    font-size: 1.1rem;
+}
+
 .area-icon {
     display: block;
     margin-bottom: 12px;
@@ -248,7 +364,7 @@ main a:hover {
 }
 
 .area-type {
-    font-size: 0.7rem;
+    font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 2px;
     opacity: 0.8;
