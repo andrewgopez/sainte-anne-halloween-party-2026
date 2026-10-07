@@ -76,6 +76,25 @@ main {
     letter-spacing: 1px;
 }
 
+/* Party Address */
+
+.party-address {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    color: white;
+    text-decoration: none;
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.party-address:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+}
+
 /* Footer */
 
 footer {
