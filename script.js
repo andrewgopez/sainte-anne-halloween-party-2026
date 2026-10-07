@@ -26,5 +26,32 @@ function updateCountdown() {
     document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
 }
 
-updateCountdown();
-setInterval(updateCountdown, 1000);
+if (document.getElementById("countdown")) {
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+}
+
+// Dark/Light Mode
+
+const themeToggle = document.getElementById("theme-toggle");
+console.log(themeToggle);
+
+// Load saved theme
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    themeToggle.textContent = "☀️";
+}
+
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+        themeToggle.textContent = "☀️";
+    } else {
+        localStorage.setItem("theme", "light");
+        themeToggle.textContent = "🌙";
+    }
+});
