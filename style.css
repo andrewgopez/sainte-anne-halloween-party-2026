@@ -49,6 +49,12 @@ nav a:hover {
     box-shadow: 0 8px 18px rgba(0, 90, 130, 0.3);
 }
 
+nav a.active {
+    background: linear-gradient(135deg, #168ac0, #36b7d9);
+    border-color: white;
+    box-shadow: 0 6px 15px rgba(0, 90, 130, 0.35);
+}
+
 /* Main Content */
 
 main {
@@ -683,6 +689,11 @@ body.dark-mode nav a {
 
 body.dark-mode nav a:hover {
     background: linear-gradient(135deg, #064b70, #087ca8);
+}
+
+body.dark-mode nav a.active {
+    background: linear-gradient(135deg, #087ca8, #168ac0);
+    border-color: #36b7d9;
 }
 
 body.dark-mode .info-card,
