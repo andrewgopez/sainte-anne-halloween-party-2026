@@ -655,6 +655,10 @@ footer {
     box-shadow: 0 -4px 15px rgba(0, 60, 90, 0.2);
 }
 
+footer p {
+    font-weight: bold;
+}
+
 /* Theme Toggle */
 
 #theme-toggle {
