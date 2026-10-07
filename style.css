@@ -486,6 +486,10 @@ main a:hover {
     margin-top: 70px;
 }
 
+.guest-food-section .section-label {
+    font-size: 1.2rem;
+}
+
 /* Footer */
 
 footer {
