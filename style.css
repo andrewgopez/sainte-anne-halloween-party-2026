@@ -121,8 +121,8 @@ main a:hover {
 .party-area {
     width: 180px;
     padding: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
+    background: linear-gradient(135deg, #e6f7ff, #9dd8f5);
+    border: 1px solid #6fc1e8;
     border-radius: 10px;
 }
 
