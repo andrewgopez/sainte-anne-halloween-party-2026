@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
+
 <body>
     <header>
         <h1>🎃 Sainte Anne Halloween House Party 2026 🎃</h1>
@@ -21,16 +23,44 @@
     </header>
 
     <main>
-        <h2>Welcome!</h2>
-
-        <p>Welcome to the Sainte Anne Halloween House Party 2026!</p>
+        <section class="hero-section">
+            <p class="section-label">🎃 WELCOME TO THE PARTY 👻</p>
+            <h2>Sainte Anne Halloween House Party 2026</h2>
+            <p class="hero-intro">
+                Get ready for a night of Halloween fun, activities, food, and good times!
+            </p>
+        </section>
 
         <h2>Party Information</h2>
 
-        <p><strong>📅 Date:</strong> Saturday, October 31</p>
-        <p><strong>🕐 Time:</strong> Starts at 6:00 PM (Montreal time)</p>
-        <p><strong>📍 Main Area:</strong> Backyard (see the <a href="location.html">Location</a> tab for the address)</p>
-        <p><strong>🌊 Theme:</strong> Ocean</p>
+        <div class="party-info">
+
+            <div class="info-card">
+                <span class="info-icon">📅</span>
+                <h3>Date</h3>
+                <p>Saturday, October <span class="date-number">31</span></p>
+            </div>
+
+            <div class="info-card">
+                <span class="info-icon">🕐</span>
+                <h3>Time</h3>
+                <p>Starts at 6:00 PM</p>
+                <small>Montreal time</small>
+            </div>
+
+            <div class="info-card">
+                <span class="info-icon">📍</span>
+                <h3>Main Area</h3>
+                <p>Backyard</p>
+            </div>
+
+            <div class="info-card">
+                <span class="info-icon">🌊</span>
+                <h3>Theme</h3>
+                <p>Ocean</p>
+            </div>
+
+        </div>
 
         <h2>Countdown to the Party</h2>
         <div id="countdown">
@@ -55,7 +85,7 @@
             </div>
         </div>
 
-        <p>
+        <p class="hero-outro">
             Get ready for a night of Halloween fun, activities, food,
             and good times!
         </p>
@@ -67,4 +97,5 @@
 
     <script src="script.js" defer></script>
 </body>
+
 </html>
