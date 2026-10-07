@@ -379,6 +379,97 @@ main a:hover {
     font-weight: bold;
 }
 
+/* Activities Page */
+
+.activities-section,
+.all-night-section {
+    margin-bottom: 60px;
+}
+
+.activity-schedule {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 30px auto 0;
+}
+
+.activity-card {
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(145deg, #087ca8, #35c2dc);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 100, 150, 0.15);
+    transition: 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 100, 150, 0.25);
+}
+
+.activity-icon {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 3.5rem;
+    transition: 0.3s ease;
+}
+
+.activity-card:hover .activity-icon {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.activity-time {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.activity-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.all-night-section {
+    margin-top: 70px;
+}
+
+.all-night-games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 30px auto 0;
+}
+
+.game-card {
+    padding: 25px 15px;
+    text-align: center;
+    background: linear-gradient(145deg, #f5fcff, #c8edff);
+    border: 1px solid #8bd4f2;
+    border-radius: 18px;
+    box-shadow: 0 6px 15px rgba(0, 100, 150, 0.12);
+    transition: 0.25s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 100, 150, 0.2);
+}
+
+.game-card > span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 2.8rem;
+}
+
+.game-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
 /* Food Page */
 
 .food-section,
