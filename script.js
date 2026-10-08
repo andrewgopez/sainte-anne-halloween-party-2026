@@ -31,6 +31,10 @@ if (document.getElementById("countdown")) {
     setInterval(updateCountdown, 1000);
 }
 
+// Dark/Light Mode
+
+const themeToggle = document.getElementById("theme-toggle");
+
 // Load saved theme
 const savedTheme = localStorage.getItem("theme");
 
