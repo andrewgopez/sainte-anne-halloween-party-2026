@@ -451,51 +451,73 @@ main a:hover {
     margin-bottom: 60px;
 }
 
-.activity-schedule {
+/* Activity Timeline */
+
+.activity-timeline {
+    position: relative;
+    max-width: 700px;
+    margin: 40px auto 0;
+    padding: 10px 0;
+}
+
+.activity-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: #168ac0;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 900px;
-    margin: 30px auto 0;
+    grid-template-columns: 1fr 80px 1fr;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-.activity-card {
-    padding: 30px 20px;
-    text-align: center;
-    color: white;
-    background: linear-gradient(145deg, #087ca8, #35c2dc);
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 100, 150, 0.15);
-    transition: 0.3s ease;
-}
-
-.activity-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 100, 150, 0.25);
-}
-
-.activity-icon {
-    display: block;
-    margin-bottom: 12px;
-    font-size: 3.5rem;
-    transition: 0.3s ease;
-}
-
-.activity-card:hover .activity-icon {
-    transform: scale(1.15) rotate(5deg);
-}
-
-.activity-time {
-    margin-bottom: 10px;
+.timeline-time {
+    padding: 15px;
     font-size: 1.3rem;
     font-weight: bold;
-    letter-spacing: 1px;
+    color: #064b70;
+    text-align: right;
 }
 
-.activity-card h3 {
-    margin: 0;
-    font-size: 1.5rem;
+.timeline-dot {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    font-size: 2rem;
+    background: white;
+    border: 4px solid #168ac0;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 90, 130, 0.2);
 }
+
+.timeline-content {
+    margin-left: 20px;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    background: linear-gradient(145deg, #087ca8, #35c2dc);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 100, 150, 0.15);
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+/* All-Night Games */
 
 .all-night-section {
     margin-top: 70px;
@@ -524,7 +546,7 @@ main a:hover {
     box-shadow: 0 12px 25px rgba(0, 100, 150, 0.2);
 }
 
-.game-card>span {
+.game-card > span {
     display: block;
     margin-bottom: 10px;
     font-size: 2.8rem;
@@ -719,8 +741,9 @@ body.dark-mode .info-card a {
     color: #f0f7fa;
 }
 
-body.dark-mode .food-card.featured,
-body.dark-mode .activity-card {
+/* Food */
+
+body.dark-mode .food-card.featured {
     background: linear-gradient(145deg, #064b70, #087ca8);
 }
 
@@ -734,6 +757,27 @@ body.dark-mode .featured-drink small {
     color: #c5d9df;
 }
 
+/* Activity Timeline */
+
+body.dark-mode .timeline-time {
+    color: #f0f7fa;
+}
+
+body.dark-mode .activity-timeline::before {
+    background: #168ac0;
+}
+
+body.dark-mode .timeline-dot {
+    background: #123442;
+    border-color: #287c98;
+}
+
+body.dark-mode .timeline-content {
+    background: linear-gradient(145deg, #064b70, #087ca8);
+}
+
+/* Transportation */
+
 body.dark-mode .transport-card h3,
 body.dark-mode .transport-card p,
 body.dark-mode .transport-card strong {
@@ -746,9 +790,13 @@ body.dark-mode .party-address {
     border: 1px solid #287c98;
 }
 
+/* Countdown */
+
 body.dark-mode #countdown div {
     color: #f0f7fa;
 }
+
+/* Footer */
 
 body.dark-mode footer {
     background: linear-gradient(135deg, #02141e, #06354b);
@@ -801,11 +849,43 @@ body.dark-mode footer {
 
     .party-info,
     .food-categories,
-    .activity-schedule,
     .all-night-games,
     .transport-options {
         grid-template-columns: 1fr;
     }
+
+    /* Activity Timeline */
+
+    .activity-timeline {
+        max-width: 100%;
+    }
+
+    .timeline-item {
+        grid-template-columns: 70px 60px 1fr;
+    }
+
+    .timeline-time {
+        padding: 10px 5px;
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    .timeline-dot {
+        width: 50px;
+        height: 50px;
+        font-size: 1.6rem;
+    }
+
+    .timeline-content {
+        margin-left: 10px;
+        padding: 15px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Party Areas */
 
     .party-areas {
         grid-template-columns: repeat(2, 1fr);
@@ -839,6 +919,8 @@ body.dark-mode footer {
         font-size: 1rem;
     }
 
+    /* Location */
+
     .location-card {
         flex-direction: column;
         padding: 30px 20px;
@@ -848,6 +930,8 @@ body.dark-mode footer {
     .location-details p {
         font-size: 1.15rem;
     }
+
+    /* Countdown */
 
     #countdown {
         gap: 12px;
@@ -860,4 +944,5 @@ body.dark-mode footer {
     #countdown small {
         font-size: 0.85rem;
     }
+
 }
