@@ -385,52 +385,6 @@ main a:hover {
     color: #064b70;
 }
 
-/* Overnight Stay */
-
-.overnight-section {
-    margin-bottom: 60px;
-}
-
-.overnight-card {
-    max-width: 650px;
-    margin: 30px auto 0;
-    padding: 30px;
-    text-align: center;
-    background: linear-gradient(145deg, #f5fcff, #c8edff);
-    border: 1px solid #8bd4f2;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 100, 150, 0.15);
-    transition: 0.3s ease;
-}
-
-.overnight-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0, 100, 150, 0.25);
-}
-
-.overnight-icon {
-    display: block;
-    margin-bottom: 12px;
-    font-size: 3.5rem;
-}
-
-.overnight-card h3 {
-    margin: 0 0 15px;
-    font-size: 1.5rem;
-    color: #064b70;
-}
-
-.overnight-card p {
-    margin: 10px 0;
-    color: #333;
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.overnight-card strong {
-    color: #064b70;
-}
-
 /* Party Areas */
 
 .party-areas {
@@ -496,6 +450,86 @@ main a:hover {
 
 .capacity {
     font-weight: bold;
+}
+
+/* Overnight Stay */
+
+.overnight-section {
+    margin-bottom: 60px;
+}
+
+.overnight-card {
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(145deg, #f5fcff, #c8edff);
+    border: 1px solid #8bd4f2;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 100, 150, 0.15);
+    transition: 0.3s ease;
+}
+
+.overnight-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 100, 150, 0.25);
+}
+
+.overnight-icon {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 3.5rem;
+}
+
+.overnight-card h3 {
+    margin: 0 0 15px;
+    font-size: 1.5rem;
+    color: #064b70;
+}
+
+.overnight-card p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.overnight-card strong {
+    color: #064b70;
+}
+
+/* What to Bring */
+
+.what-to-bring-section {
+    margin-bottom: 60px;
+}
+
+.what-to-bring-card {
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 30px;
+    text-align: left;
+    background: linear-gradient(145deg, #f5fcff, #c8edff);
+    border: 1px solid #8bd4f2;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 100, 150, 0.15);
+    transition: 0.3s ease;
+}
+
+.what-to-bring-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 100, 150, 0.25);
+}
+
+.what-to-bring-card p {
+    margin: 15px 0;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.what-to-bring-card strong {
+    color: #064b70;
 }
 
 /* Activities Page */
@@ -912,6 +946,19 @@ body.dark-mode .overnight-card strong {
 
 body.dark-mode .missing-person-card {
     background: linear-gradient(145deg, #064b70, #087ca8);
+}
+
+/* What to Bring */
+
+body.dark-mode .what-to-bring-card {
+    background: linear-gradient(145deg, #123442, #174b5d);
+    border-color: #287c98;
+    color: #f0f7fa;
+}
+
+body.dark-mode .what-to-bring-card p,
+body.dark-mode .what-to-bring-card strong {
+    color: #f0f7fa;
 }
 
 /* RESPONSIVENESS */
