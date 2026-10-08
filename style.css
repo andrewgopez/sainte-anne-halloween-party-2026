@@ -447,6 +447,17 @@ main a:hover {
     color: #064b70;
 }
 
+.transit-link {
+    color: #168ac0;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.transit-link:hover {
+    color: #36b7d9;
+}
+
 /* Party Areas */
 
 .party-areas {
