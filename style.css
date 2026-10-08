@@ -244,12 +244,14 @@ main a:hover {
     letter-spacing: 1px;
 }
 
-/* Hero Outro */
+/* Party Closing */
 
-.hero-outro {
-    margin: 40px auto;
-    font-size: 1.3rem;
-    line-height: 1.6;
+.party-closing {
+    margin: 50px auto 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    letter-spacing: 1px;
 }
 
 /* Location Page */
@@ -1014,6 +1016,11 @@ body.dark-mode .table-of-contents a:hover {
     background: linear-gradient(135deg, #087ca8, #168ac0);
 }
 
+/* Party Closing */
+
+body.dark-mode .party-closing {
+    color: #f0f7fa;
+}
 /* RESPONSIVENESS */
 
 /* Mobile */
