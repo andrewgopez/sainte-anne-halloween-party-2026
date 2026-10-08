@@ -603,6 +603,47 @@ main a:hover {
     font-size: 1.2rem;
 }
 
+/* Missing Person Posters */
+
+.missing-person-section {
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.missing-person-card {
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(145deg, #087ca8, #35c2dc);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 100, 150, 0.15);
+    transition: 0.3s ease;
+}
+
+.missing-person-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 100, 150, 0.25);
+}
+
+.missing-person-icon {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 3.5rem;
+}
+
+.missing-person-card h3 {
+    margin: 0 0 15px;
+    font-size: 1.5rem;
+}
+
+.missing-person-card p {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
 /* Food Page */
 
 .food-section,
@@ -861,6 +902,12 @@ body.dark-mode .overnight-card h3,
 body.dark-mode .overnight-card p,
 body.dark-mode .overnight-card strong {
     color: #f0f7fa;
+}
+
+/* Missing Person Posters */
+
+body.dark-mode .missing-person-card {
+    background: linear-gradient(145deg, #064b70, #087ca8);
 }
 
 /* RESPONSIVENESS */
