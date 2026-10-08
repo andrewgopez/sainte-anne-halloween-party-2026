@@ -76,6 +76,10 @@ main a:hover {
     transform: scale(1.05);
 }
 
+.label-icon {
+    font-size: 1.4em;
+}
+
 /* Hero Section */
 
 .hero-section {
@@ -219,7 +223,7 @@ main a:hover {
     display: inline-block;
     margin-bottom: 8px;
     color: #168ac0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -369,7 +373,7 @@ main a:hover {
 .transport-card p {
     margin: 10px 0;
     color: #333;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
 }
 
@@ -480,7 +484,7 @@ main a:hover {
 }
 
 .area-type {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 2px;
     opacity: 0.8;
@@ -749,10 +753,6 @@ main a:hover {
 
 .guest-food-section {
     margin-top: 70px;
-}
-
-.guest-food-section .section-label {
-    font-size: 1.2rem;
 }
 
 /* Footer */
