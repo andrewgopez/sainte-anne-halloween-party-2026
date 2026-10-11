@@ -866,6 +866,56 @@ main a:hover {
     margin-top: 70px;
 }
 
+/* House Rules Page */
+
+.rules-container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 30px auto;
+}
+
+.rule-card {
+    grid-column: span 2;
+    min-width: 0;
+    background: linear-gradient(135deg, #e0f7fa, #b3e5fc);
+    border: 2px solid #168ac0;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rule-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+
+.rule-card h2 {
+    font-size: 1.15rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #064663;
+}
+
+.rule-card p {
+    margin-bottom: 0;
+    line-height: 1.6;
+    color: #123746;
+}
+
+/* Center the last two cards */
+.rule-card:nth-child(4) {
+    grid-column: 2 / 4;
+}
+
+.rule-card:nth-child(5) {
+    grid-column: 4 / 6;
+}
+
 /* Footer */
 
 footer {
@@ -1069,6 +1119,22 @@ body.dark-mode .table-of-contents a:hover {
 body.dark-mode .party-closing {
     color: #f0f7fa;
 }
+
+/* House Rules */
+
+body.dark-mode .rule-card {
+    background: linear-gradient(135deg, #123b52, #174d68);
+    border-color: #36b7d9;
+}
+
+body.dark-mode .rule-card h2 {
+    color: #b8efff;
+}
+
+body.dark-mode .rule-card p {
+    color: #f0f7fa;
+}
+
 /* RESPONSIVENESS */
 
 /* Mobile */
@@ -1212,4 +1278,35 @@ body.dark-mode .party-closing {
         font-size: 0.85rem;
     }
 
+    /* House Rules */
+
+    .rules-container {
+        grid-template-columns: 1fr;
+    }
+
+    .rule-card,
+    .rule-card:nth-child(4),
+    .rule-card:nth-child(5) {
+        grid-column: 1;
+    }
+}
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .rule-card {
+        transition: none;
+    }
+
+    .rule-card:hover {
+        transform: none;
+    }
+
+    .spooky-ghost {
+        animation: none;
+    }
 }
